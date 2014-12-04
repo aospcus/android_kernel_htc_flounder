@@ -18,8 +18,6 @@ typedef struct {
 
 #define __ARCH_HAS_SA_RESTORER
 
-<<<<<<< HEAD
-=======
 #include <asm-generic/signal-defs.h>
 
 #ifdef __KERNEL__
@@ -67,6 +65,5 @@ typedef struct sigaltstack {
 } stack_t;
 
 #ifdef __KERNEL__
->>>>>>> 556ba70... signal: Define __ARCH_HAS_SA_RESTORER so we know whether to clear sa_restorer
 #include <asm/sigcontext.h>
 #endif
