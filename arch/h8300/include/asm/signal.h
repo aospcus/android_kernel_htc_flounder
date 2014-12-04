@@ -16,9 +16,6 @@ typedef struct {
 	unsigned long sig[_NSIG_WORDS];
 } sigset_t;
 
-<<<<<<< HEAD
-#define __ARCH_HAS_SA_RESTORER
-=======
 #else
 /* Here we must cater to libcs that poke about in kernel headers.  */
 
@@ -150,7 +147,6 @@ typedef struct sigaltstack {
 } stack_t;
 
 #ifdef __KERNEL__
->>>>>>> 556ba70... signal: Define __ARCH_HAS_SA_RESTORER so we know whether to clear sa_restorer
 
 #include <asm/sigcontext.h>
 #undef __HAVE_ARCH_SIG_BITOPS
