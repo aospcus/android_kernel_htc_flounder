@@ -5,9 +5,6 @@
 #include <uapi/asm/signal.h>
 #include <uapi/asm/ptrace.h>
 
-<<<<<<< HEAD
-extern unsigned long get_tm_stackpointer(struct pt_regs *regs);
-=======
 #define _NSIG		64
 #ifdef __powerpc64__
 #define _NSIG_BPW	64
@@ -151,6 +148,5 @@ struct sig_dbg_op {
 /* Enable or disable branch tracing.  The value sets the state. */
 #define SIG_DBG_BRANCH_TRACING		2
 #endif /* ! __powerpc64__ */
->>>>>>> 556ba70... signal: Define __ARCH_HAS_SA_RESTORER so we know whether to clear sa_restorer
 
 #endif /* _ASM_POWERPC_SIGNAL_H */
