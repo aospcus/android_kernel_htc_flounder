@@ -21,9 +21,6 @@ typedef struct {
         unsigned long sig[_NSIG_WORDS];
 } sigset_t;
 
-<<<<<<< HEAD
-#define __ARCH_HAS_SA_RESTORER
-=======
 #else
 /* Here we must cater to libcs that poke about in kernel headers.  */
 
@@ -164,5 +161,4 @@ typedef struct sigaltstack {
 } stack_t;
 
 
->>>>>>> 556ba70... signal: Define __ARCH_HAS_SA_RESTORER so we know whether to clear sa_restorer
 #endif
