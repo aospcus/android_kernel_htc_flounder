@@ -28,8 +28,6 @@ typedef struct {
 
 #define __ARCH_HAS_SA_RESTORER
 
-<<<<<<< HEAD
-=======
 #define MINSIGSTKSZ	2048
 #define SIGSTKSZ	8192
 
@@ -79,7 +77,6 @@ typedef struct sigaltstack {
 } stack_t;
 
 #ifdef __KERNEL__
->>>>>>> 556ba70... signal: Define __ARCH_HAS_SA_RESTORER so we know whether to clear sa_restorer
 #include <asm/sigcontext.h>
 
 #endif /* _ASM_SIGNAL_H */
