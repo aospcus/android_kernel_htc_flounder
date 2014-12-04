@@ -33,8 +33,6 @@ typedef sigset_t compat_sigset_t;
 extern void do_notify_resume(struct pt_regs *, void *, __u32);
 
 #define __ARCH_HAS_SA_RESTORER
-<<<<<<< HEAD
-=======
 
 #ifdef __i386__
 # ifdef __KERNEL__
@@ -74,7 +72,6 @@ struct sigaction {
 
 # endif /* ! __KERNEL__ */
 #else /* __i386__ */
->>>>>>> 556ba70... signal: Define __ARCH_HAS_SA_RESTORER so we know whether to clear sa_restorer
 
 #include <asm/sigcontext.h>
 
