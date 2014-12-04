@@ -17,8 +17,6 @@
 #ifndef __ASSEMBLY__
 #define __ARCH_HAS_SA_RESTORER
 
-<<<<<<< HEAD
-=======
 #define SIG_BLOCK          0	/* for blocking signals */
 #define SIG_UNBLOCK        1	/* for unblocking signals */
 #define SIG_SETMASK        2	/* for setting the signal mask */
@@ -76,7 +74,6 @@ typedef struct sigaltstack {
 } stack_t;
 
 #ifdef __KERNEL__
->>>>>>> 556ba70... signal: Define __ARCH_HAS_SA_RESTORER so we know whether to clear sa_restorer
 #include <asm/sigcontext.h>
 
 #endif	/* __ASSEMBLY__ */
