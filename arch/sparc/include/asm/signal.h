@@ -20,8 +20,6 @@
  *
  */
 #define SA_STATIC_ALLOC         0x8000
-<<<<<<< HEAD
-=======
 #endif
 
 #include <asm-generic/signal-defs.h>
@@ -40,7 +38,6 @@ struct __old_sigaction {
 	void			(*sa_restorer)(void);  /* not used by Linux/SPARC yet */
 };
 #define __ARCH_HAS_SA_RESTORER
->>>>>>> 556ba70... signal: Define __ARCH_HAS_SA_RESTORER so we know whether to clear sa_restorer
 
 #define __ARCH_HAS_KA_RESTORER
 #define __ARCH_HAS_SA_RESTORER
